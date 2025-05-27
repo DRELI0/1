@@ -68,7 +68,7 @@ Create a `.env.local` file in the root directory:
 
 ```env
 # Spotify Playlist Integration
-NEXT_PUBLIC_SPOTIFY_PLAYLIST_ID=677KIyayzcVJeA77I9hEi0
+NEXT_PUBLIC_SPOTIFY_PLAYLIST_ID=your_playlist_id_here
 ```
 
 ### 4. Run Development Server
