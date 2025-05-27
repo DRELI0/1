@@ -71,11 +71,11 @@ export const SpotifyPlaylist = () => {
         >
           <iframe
             style={{ borderRadius: "12px" }}
-            src={
-              currentTheme === "dark"
-                ? "https://open.spotify.com/embed/playlist/677KIyayzcVJeA77I9hEi0?utm_source=generator&theme=0"
-                : "https://open.spotify.com/embed/playlist/677KIyayzcVJeA77I9hEi0?utm_source=generator&theme=1"
-            }
+            src={`https://open.spotify.com/embed/playlist/${
+              process.env.NEXT_PUBLIC_SPOTIFY_PLAYLIST_ID
+            }?utm_source=generator&theme=${
+              currentTheme === "dark" ? "0" : "1"
+            }`}
             width="100%"
             height="500px"
             allowFullScreen

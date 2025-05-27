@@ -5,13 +5,7 @@ import { motion } from "motion/react"
 import { VelocityScroll } from "@/components/magicui/scroll-based-velocity"
 import { Badge } from "@/components/ui/badge"
 import { GlowingEffect } from "@/components/ui/glowing-effect"
-import {
-  IconBrandFacebook,
-  IconBrandGithub,
-  IconBrandInstagram,
-  IconBrandLinkedin,
-  IconMail,
-} from "@tabler/icons-react"
+import { MY_NETWORKS } from "@/data/my-networks"
 import { Code, Layers, UserRound, Zap } from "lucide-react"
 import { useTheme } from "next-themes"
 import { MyResume } from "../my-resume"
@@ -114,39 +108,11 @@ export function MyInformation() {
   )
 }
 
-const networks = [
-  {
-    name: "Github",
-    icon: IconBrandGithub,
-    href: "https://github.com/kinhdev24",
-  },
-  {
-    name: "Linkedin",
-    icon: IconBrandLinkedin,
-    href: "https://www.linkedin.com/in/kinhdev24/",
-  },
-  {
-    name: "Email",
-    icon: IconMail,
-    href: "mailto:kinhdev24@gmail.com",
-  },
-  {
-    name: "Facebook",
-    icon: IconBrandFacebook,
-    href: "https://www.facebook.com/kinhdev24/",
-  },
-  {
-    name: "Instagram",
-    icon: IconBrandInstagram,
-    href: "https://www.instagram.com/kinhdev24/",
-  },
-]
-
 const SocialNetwork = () => {
   return (
     <div className="relative z-20 mt-4 sm:mt-0">
       <div className="flex flex-wrap items-center gap-2">
-        {networks.map((network) => (
+        {MY_NETWORKS.map((network) => (
           <a
             key={network.name}
             href={network.href}

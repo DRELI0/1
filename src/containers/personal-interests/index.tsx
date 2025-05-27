@@ -11,6 +11,7 @@ import { useEffect, useState } from "react"
 import { SpotifyPlaylist } from "./spotify-playlist"
 import { StackCloud } from "./stack-cloud"
 import { BlurImage } from "@/components/ui/apple-cards-carousel"
+import { LEARNING_RESOURCES } from "@/data/learning-resource"
 
 export function PersonalInterests() {
   const [mounted, setMounted] = useState(false)
@@ -169,58 +170,28 @@ const SkeletonFour = () => {
       whileHover="hover"
       className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-row space-x-2"
     >
-      <motion.a
-        variants={first}
-        className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center cursor-none"
-        href="https://daily.dev"
-        target="_blank"
-      >
-        <div className="p-1 rounded-xl bg-black">
-          <BlurImage
-            src="https://cdn.prod.website-files.com/5e0a5d9d743608d0f3ea6753/5f1d8b1b9c7814aae6b69044_Daily%20Full%20logo.svg"
-            alt="avatar"
-            height="100"
-            width="100"
-          />
-        </div>
-        <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
-          Articles, trends, and tools in one place.
-        </p>
-      </motion.a>
-      <motion.a
-        className="h-full relative z-20 w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center cursor-none"
-        href="https://www.youtube.com/@DaveGrayTeachesCode"
-        target="_blank"
-      >
-        <BlurImage
-          src="https://yt3.googleusercontent.com/nv365KiAJyURPEBZyCh0SV3hSBnZXbvVXrzRwcNDfgUpXPn9-3_4PY0SkQrAJWnzQOxKqfUtrQ=s160-c-k-c0x00ffffff-no-rj"
-          alt="avatar"
-          height="100"
-          width="100"
-          className="rounded-full h-14 w-14"
-        />
-        <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
-          Web Development tutorials
-        </p>
-      </motion.a>
-      <motion.a
-        variants={second}
-        className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center cursor-none"
-        href="https://www.youtube.com/@WebDevSimplified"
-        target="_blank"
-      >
-        <BlurImage
-          src="https://yt3.googleusercontent.com/ytc/AIdro_nO3F7DfVXaf6wsHPS_hF327ggeWUCwZSELb5DCWBL1aw=s160-c-k-c0x00ffffff-no-rj"
-          alt="avatar"
-          height="100"
-          width="100"
-          className="rounded-full h-14 w-14"
-        />
-        <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
-          Clear and practical tutorials that simplify complex web concepts.
-        </p>
-      </motion.a>
+      {LEARNING_RESOURCES.map(
+        ({ href, imgSrc, alt, description, imageWrapperClass }, index) => {
+          const variant = index === 0 ? first : index === 2 ? second : undefined
 
+          return (
+            <motion.a
+              key={href}
+              variants={variant}
+              className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center cursor-none relative z-20"
+              href={href}
+              target="_blank"
+            >
+              <div className={imageWrapperClass}>
+                <BlurImage src={imgSrc} alt={alt} height={100} width={100} />
+              </div>
+              <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
+                {description}
+              </p>
+            </motion.a>
+          )
+        }
+      )}
       <Pointer className="fill-blue-500" />
     </motion.div>
   )

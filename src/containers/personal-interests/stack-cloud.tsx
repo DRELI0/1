@@ -1,35 +1,10 @@
 "use client"
 
 import { IconCloud } from "@/components/magicui/icon-cloud"
-
-const slugs = [
-  "typescript",
-  "javascript",
-  "dart",
-  "java",
-  "react",
-  "html5",
-  "css3",
-  "prisma",
-  "amazonaws",
-  "postgresql",
-  "firebase",
-  "nginx",
-  "vercel",
-  "testinglibrary",
-  "jest",
-  "cypress",
-  "docker",
-  "git",
-  "jira",
-  "github",
-  "gitlab",
-  "visualstudiocode",
-  "figma",
-]
+import { TECH_STACK } from "@/data/tech-stack"
 
 export function StackCloud() {
-  const images = slugs.map(
+  const images = TECH_STACK.map(
     (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`
   )
 
