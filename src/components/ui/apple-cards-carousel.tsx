@@ -27,7 +27,7 @@ type Card = {
   src: string
   title: string
   category: string
-  content: React.ReactNode
+  content?: React.ReactNode
   techStack?: string[]
 }
 

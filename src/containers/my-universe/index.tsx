@@ -6,23 +6,10 @@ import {
 } from "@/components/magicui/text-animate"
 import { Compare } from "@/components/ui/compare"
 import { Cover } from "@/components/ui/cover"
+import { ROLE_TITLES } from "@/data/role-titles"
 import { cn } from "@/lib/utils"
 import { motion } from "framer-motion"
 import { memo, useEffect, useState } from "react"
-
-const texts = [
-  "Front-End Developer",
-  "UI/UX Enthusiast",
-  "JavaScript Developer",
-  "React.js Developer",
-  "Next.js Developer",
-  "UI/UX Designer",
-  "Graphic Designer",
-  "Animation Developer",
-  "Motion Developer",
-  "Smooth Transition",
-  "WebGL Developer",
-]
 
 const animationTypes: AnimationVariant[] = [
   "fadeIn",
@@ -38,18 +25,18 @@ const animationTypes: AnimationVariant[] = [
 ]
 
 export const MyUniverse = () => {
-  const [currentText, setCurrentText] = useState(texts[0])
+  const [currentText, setCurrentText] = useState(ROLE_TITLES[0])
   const [currentAnimation, setCurrentAnimation] = useState(animationTypes[0])
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentText((prev) => {
-        const textIndex = texts.indexOf(prev)
-        if (textIndex === texts.length - 1) {
-          return texts[0]
+        const textIndex = ROLE_TITLES.indexOf(prev)
+        if (textIndex === ROLE_TITLES.length - 1) {
+          return ROLE_TITLES[0]
         }
 
-        return texts[textIndex + 1]
+        return ROLE_TITLES[textIndex + 1]
       })
       setCurrentAnimation(
         animationTypes[Math.floor(Math.random() * animationTypes.length)]
