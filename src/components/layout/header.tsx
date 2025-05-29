@@ -21,6 +21,7 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "../ui/drawer"
+import { Separator } from "@radix-ui/react-dropdown-menu"
 
 const links = [
   {
@@ -34,13 +35,16 @@ const links = [
   {
     title: "Projects",
     href: "/projects",
-    isComingSoon: true,
   },
   {
     title: "About",
     href: "/about",
     isComingSoon: true,
   },
+  // {
+  //   title: "Sponsors",
+  //   href: "/sponsors",
+  // },
 ]
 
 const pathNameDisableHeaderScroll = [""]
@@ -110,6 +114,14 @@ export const Header = () => {
             ))}
           </div>
           <div className="flex items-center gap-2">
+            <iframe
+              className="hidden sm:block"
+              src="https://github.com/sponsors/kinhdev24/button"
+              title="Sponsor kinhdev24"
+              height="32"
+              width="114"
+              style={{ border: "0", borderRadius: "6px" }}
+            ></iframe>
             <a
               href={"https://github.com/kinhdev24/kinhdev24-portfolio"}
               target="_blank"
@@ -168,6 +180,14 @@ export const Header = () => {
                       )}
                     </Link>
                   ))}
+                  <Separator />
+                  <iframe
+                    src="https://github.com/sponsors/kinhdev24/button"
+                    title="Sponsor kinhdev24"
+                    height="32"
+                    width="114"
+                    style={{ border: "0", borderRadius: "6px" }}
+                  ></iframe>
                 </div>
               </DrawerContent>
             </Drawer>
