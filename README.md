@@ -4,6 +4,8 @@ A modern, responsive developer portfolio showcasing skills, projects, and profes
 
 ![Portfolio Preview](https://media.daily.dev/image/upload/s--aWLslYU3--/f_auto/v1744482505/ugc/content_50c23b68-02a5-43d8-bb3e-e0b3b2f269d0)
 
+[![Sponsor kinhdev24](https://img.shields.io/badge/Sponsor-kinhdev24-ff69b4)](https://github.com/sponsors/kinhdev24)
+
 ## 🚀 Live Demo
 
 [View Live Portfolio](https://kinhdev.id.vn)
