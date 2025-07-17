@@ -15,7 +15,7 @@ export const MY_NETWORKS = [
   {
     name: "Linkedin",
     icon: IconBrandLinkedin,
-    href: "https://www.linkedin.com/in/kinhdev24/",
+     ref: "https://www.linkedin.com/in/kinhdev24/",
   },
   {
     name: "Email",

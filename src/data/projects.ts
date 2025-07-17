@@ -1,34 +1,36 @@
-export const PROJECTS = [
-  {
-    category: "DePIN Manager ",
-    title: "Hivello Dashboard",
-    src: "/images/mockup/hivello_mockup.png",
-    techStack: ["Next.js", "Auth0", "TailwindCSS", "ShadCn", "SWR", "Zustand"],
-  },
-  {
-    category: "Project Management",
-    title: "GrowingSoft",
-    src: "/images/mockup/growing_mockup.png",
+// src/data/faqs.ts
 
-    techStack: ["Next.js", "TailwindCSS", "DnD Kit", "React Context"],
+export const FAQS = [
+  {
+    question: "Is Deal Diner safe to use?",
+    answer: "Yes. All orders are processed securely through Uber Eats group links, and we never handle sensitive payment information directly.",
   },
   {
-    category: "Tracking System",
-    title: "Tracki",
-    src: "/images/mockup/tracki_mockup.png",
-
-    techStack: ["React.js", "MUI", "Redux"],
+    question: "Is this legal?",
+    answer: "Deal Diner simply helps users create group orders using existing Uber Eats functionality. We do not encourage misuse of promotions or any activity against Uber's terms of service.",
   },
   {
-    category: "EMS",
-    title: "iLotusland Monitor",
-    src: "/images/mockup/ilotusland_mockup.png",
-    techStack: [
-      "React.js",
-      "Ant Design",
-      "Styled Components",
-      "Redux",
-      "React Hook Form",
-    ],
+    question: "How do I create a group order link?",
+    answer: "Log in to Uber Eats, add your items to cart, and select 'Group Order'. Then, copy the link and paste it in a ticket channel.",
+  },
+  {
+    question: "Do I need Uber One?",
+    answer: "It’s not required, but using Uber One often reduces delivery fees. You’ll still be able to order without it.",
+  },
+  {
+    question: "What if I don’t receive my order?",
+    answer: "Open a support ticket immediately and provide screenshots of your order. Our team will assist you quickly.",
+  },
+  {
+    question: "Are there any refund policies?",
+    answer: "Refunds are granted only if a valid issue occurs. Orders with incorrect links or payment errors will not be processed.",
+  },
+  {
+    question: "What payment methods do you accept?",
+    answer: "We accept Cash App, Apple Pay, and other popular payment services. Ask in the ticket for instructions.",
+  },
+  {
+    question: "How long does it take to get my food?",
+    answer: "Once your order is verified and placed, most deliveries arrive in 30–45 minutes depending on your area and the store's ETA.",
   },
 ]

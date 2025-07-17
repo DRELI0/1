@@ -35,7 +35,6 @@ export const MyUniverse = () => {
         if (textIndex === ROLE_TITLES.length - 1) {
           return ROLE_TITLES[0]
         }
-
         return ROLE_TITLES[textIndex + 1]
       })
       setCurrentAnimation(
@@ -49,29 +48,24 @@ export const MyUniverse = () => {
     <div className="w-full flex flex-col-reverse lg:flex-row justify-between items-center gap-20 px-2 md:px-6">
       <div className="flex-1 relative w-full lg:w-auto">
         <div className="text-xs bg-zinc-100 dark:bg-gray-800/50 w-max rounded-full border flex items-center gap-2 px-3 py-1.5">
-          <div className="size-2 rounded-full bg-indigo-700 font-medium animate-pulse" />
-          Welcome to my universe
+          <div className="size-2 rounded-full bg-green-600 font-medium animate-pulse" />
+          Deal Diner is live 🍽️
         </div>
+
         <div className="flex flex-row gap-4 items-center my-4 lg:my-0 lg:block">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight my-4 md:my-8 dark:text-zinc-300 text-zinc-700">
             Hello<span className="lg:hidden">,</span>
           </h1>
-
           <Title />
         </div>
 
-        {/* Responsive positioning for floating elements */}
-        <div className="px-3 py-2 hidden sm:block absolute top-8 left-16 sm:left-32 bg-purple-500/20 rounded-[6px] w-max font-medium dark:text-purple-300 text-purple-500 border border-purple-500/20 animate-wiggle duration-1000">
-          UI Magic
+        <div className="px-3 py-2 hidden sm:block absolute top-8 left-16 sm:left-32 bg-yellow-400/20 rounded-[6px] w-max font-medium dark:text-yellow-300 text-yellow-700 border border-yellow-500/20 animate-wiggle duration-1000">
+          Save Big 🍟
         </div>
 
         <div className="px-3 py-2 hidden sm:block absolute top-24 right-4 sm:right-10 bg-blue-500/20 rounded-[6px] w-max font-medium dark:text-blue-300 text-blue-500 border border-blue-500/20 animate-wiggle duration-1000">
-          Clean Code
+          Trusted Service ✅
         </div>
-
-        {/* <div className="px-3 py-2 hidden sm:block absolute bottom-36 right-2 sm:right-20 bg-yellow-500/20 rounded-[6px] w-max font-medium dark:text-yellow-300 text-yellow-500 border border-yellow-500/20 animate-wiggle duration-1000">
-          Innovation
-        </div> */}
 
         <div className="flex items-center justify-center md:justify-start">
           <motion.div
@@ -95,15 +89,16 @@ export const MyUniverse = () => {
             </TextAnimate>
           </motion.div>
         </div>
+
         <div className="text-lg text-zinc-600 dark:text-zinc-400 my-6 md:my-10 font-bold">
-          React Enthusiast ⚛️ | Next.js Explorer 🚀
-          <br />{" "}
+          Premium meals for less 💸 | Uber Eats powered 🍔
+          <br />
           <span className="font-normal italic">
-            Leading scalable UI development & shaping modern web experiences
-            with clean, efficient code 💻✨
+            Join Deal Diner & skip the full price. Safe, quick, and verified. 🛒
           </span>
         </div>
       </div>
+
       <div className="flex-1 flex justify-center lg:justify-end w-full mt-8 lg:mt-0">
         <CompareDemo />
       </div>
@@ -115,13 +110,16 @@ export function CompareDemo() {
   return (
     <div className="w-full border rounded-3xl dark:bg-neutral-900 bg-neutral-100 border-neutral-200 dark:border-neutral-800">
       <Compare
-        firstImage="https://voocgavdbpy2gucg.public.blob.vercel-storage.com/portfolio/image%20%283%29-9ohWXR6mPsqfP9GC3OXB6l23pKXqpS.png"
-        secondImage="https://voocgavdbpy2gucg.public.blob.vercel-storage.com/portfolio/image%20%284%29-Z38KH4uoJOoyhY6YDXVDNxRu8uWZUS.png"
+        firstImage="https://i.imgur.com/2DPGrQd.png" // Before Promo
+        secondImage="https://i.imgur.com/XJ5WHG6.png" // After Promo
         firstImageClassName="object-cover object-left-top"
         secondImageClassname="object-cover object-left-top"
         className="h-[200px] sm:h-[250px] md:h-[400px] lg:h-[500px] w-full"
         slideMode="hover"
       />
+      <div className="text-center mt-2 text-sm text-muted-foreground">
+        Subtotal comparison 💰 Before vs After Promo
+      </div>
     </div>
   )
 }
@@ -129,7 +127,7 @@ export function CompareDemo() {
 export const Title = memo(() => {
   return (
     <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight sm:my-6 dark:text-zinc-300 text-zinc-700">
-      I&apos;m <Cover>Kinh Bach</Cover>
+      Welcome to <Cover>Deal Diner</Cover>
     </h1>
   )
 })

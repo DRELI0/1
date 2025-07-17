@@ -19,13 +19,11 @@ export const SpotifyPlaylist = () => {
     setIsLoading(true)
   }, [currentTheme])
 
-  // Handle iframe load event
   const handleIframeLoad = () => {
     setIsLoading(false)
   }
 
   if (!mounted) {
-    // Return a placeholder with the same dimensions to prevent layout shift
     return (
       <div className="w-full h-[352px] rounded-xl bg-gray-200 dark:bg-gray-800 animate-pulse" />
     )
@@ -66,23 +64,18 @@ export const SpotifyPlaylist = () => {
           exit={{ opacity: 0, y: -10 }}
           transition={{
             duration: 0.4,
-            ease: [0.22, 1, 0.36, 1], // Custom easing for smoother animation
+            ease: [0.22, 1, 0.36, 1],
           }}
         >
           <iframe
             style={{ borderRadius: "12px" }}
-            src={`https://open.spotify.com/embed/playlist/${
-              process.env.NEXT_PUBLIC_SPOTIFY_PLAYLIST_ID
-            }?utm_source=generator&theme=${
-              currentTheme === "dark" ? "0" : "1"
-            }`}
+            src="https://discord.com/widget?id=1196189844368539698&theme=dark"
             width="100%"
             height="500px"
             allowFullScreen
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
             loading="lazy"
             onLoad={handleIframeLoad}
-            onLoadStart={() => console.log("1")}
           ></iframe>
         </motion.div>
       </AnimatePresence>

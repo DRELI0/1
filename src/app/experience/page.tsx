@@ -2,33 +2,35 @@ import { FullScreen } from "@/components/full-screen"
 import { ExperienceTimeline } from "./containers/experience-timeline"
 
 export const metadata = {
-  title: "Experience | Kinh Dev",
+  title: "Order Guide | Deal Diner",
   description:
-    "Explore the professional journey of Kinh Dev - frontend developer with experience in modern JavaScript frameworks.",
+    "Learn how to create and submit Uber Eats group orders through Deal Diner. Follow step-by-step instructions for browser and app users.",
   openGraph: {
-    title: "Experience | Kinh Dev",
+    title: "Order Guide | Deal Diner",
     description:
-      "Frontend Developer with hands-on experience in React, Next.js, and modern UI/UX design.",
-    url: "https://kinhdev.id.vn/experience",
-    siteName: "Kinh Dev",
+      "Step-by-step guide to creating and submitting Uber Eats group orders through the Deal Diner Discord bot.",
+    url: "https://dealdiner.store/order-guide",
+    siteName: "Deal Diner",
     images: [
-      // {
-      //   url: "https://kinhdev.id.vn/images/seo/experience-og-image.png",
-      //   width: 1200,
-      //   height: 630,
-      //   alt: "Kinh Dev Experience Page",
-      // },
+      {
+        url: "https://media.discordapp.net/attachments/1392499993230966828/1392715380530610236/ChatGPT_Image_Jul_9_2025_08_52_18_PM_1.png",
+        width: 1200,
+        height: 630,
+        alt: "Deal Diner Order Guide",
+      },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Experience | Kinh Dev",
+    title: "Order Guide | Deal Diner",
     description:
-      "Check out Kinh Dev's past work and achievements in frontend development.",
-    //   images: ["https://kinhdev.id.vn/images/seo/experience-og-image.png"],
+      "Master the process of creating a group order and applying promo deals like 25 OFF 25 with Deal Diner.",
+    images: [
+      "https://media.discordapp.net/attachments/1392499993230966828/1392715380530610236/ChatGPT_Image_Jul_9_2025_08_52_18_PM_1.png",
+    ],
   },
   alternates: {
-    canonical: "https://kinhdev.id.vn/experience",
+    canonical: "https://dealdiner.store/order-guide",
   },
 }
 

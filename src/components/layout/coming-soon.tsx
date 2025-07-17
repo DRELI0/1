@@ -9,52 +9,53 @@ import { FullScreen } from "../full-screen"
 
 export const ComingSoonPage = ({ pageName }: { pageName?: string }) => {
   const [mounted, setMounted] = useState(false)
-
   const router = useRouter()
 
   useEffect(() => {
     setMounted(true)
   }, [])
+
   if (!mounted) return null
+
   return (
     <FullScreen className="flex-col">
       <Terminal>
-        <TypingAnimation>&gt; pnpm dlx kinhdev@portfolio init</TypingAnimation>
+        <TypingAnimation>&gt; launching dealdiner@latest --init</TypingAnimation>
 
         <AnimatedSpan delay={1500} className="text-green-500">
-          <span>✔ Design checks.</span>
+          <span>✔ Syncing with Uber Eats API...</span>
         </AnimatedSpan>
 
         <AnimatedSpan delay={2000} className="text-green-500">
-          <span>✔ Setting up portfolio framework. Using Next.js.</span>
+          <span>✔ Group order logic activated.</span>
         </AnimatedSpan>
 
         <AnimatedSpan delay={2500} className="text-green-500">
-          <span>✔ Implementing responsive design with Tailwind CSS.</span>
+          <span>✔ Injecting promo stack: 20OFF20, 25OFF25</span>
         </AnimatedSpan>
 
         <AnimatedSpan delay={3000} className="text-green-500">
-          <span>✔ Creating component architecture.</span>
+          <span>✔ Generating real-time order tracking modules.</span>
         </AnimatedSpan>
 
         <AnimatedSpan delay={3500} className="text-green-500">
-          <span>✔ Building project showcase section.</span>
+          <span>✔ Integrating with Discord bot interface...</span>
         </AnimatedSpan>
 
         <AnimatedSpan delay={4000} className="text-green-500">
-          <span>✔ Adding skills and expertise section.</span>
+          <span>✔ Secure payment systems linked (CashApp, PayPal, Venmo).</span>
         </AnimatedSpan>
 
         <AnimatedSpan delay={4500} className="text-green-500">
-          <span>✔ Implementing contact form functionality.</span>
+          <span>✔ Building order queue + chef dashboard...</span>
         </AnimatedSpan>
 
         <AnimatedSpan delay={5000} className="text-green-500">
-          <span>✔ Optimizing images and assets.</span>
+          <span>✔ Loading FAQ and support center...</span>
         </AnimatedSpan>
 
         <AnimatedSpan delay={5500} className="text-green-500">
-          <span>✔ Setting up animations and transitions.</span>
+          <span>✔ Enabling customer vouch system...</span>
         </AnimatedSpan>
 
         <AnimatedSpan delay={6000} className="text-blue-500">
@@ -63,15 +64,15 @@ export const ComingSoonPage = ({ pageName }: { pageName?: string }) => {
         </AnimatedSpan>
 
         <TypingAnimation delay={6500} className="text-muted-foreground">
-          Success! Portfolio initialization completed.
+          Built by @wewegonbeokay (Discord ID: 955834539123560520)
         </TypingAnimation>
 
         <TypingAnimation delay={7000} className="text-muted-foreground">
-          Launching soon at kinhdev.id.vn
+          DM on Discord for business inquiries or automation help.
         </TypingAnimation>
       </Terminal>
 
-      <div className="flex mt-10 justify-center text-center ">
+      <div className="flex mt-10 justify-center text-center">
         <HoverBorderGradient
           containerClassName="rounded-full"
           as="button"

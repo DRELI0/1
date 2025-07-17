@@ -1,10 +1,21 @@
 "use client"
 
 import { IconCloud } from "@/components/magicui/icon-cloud"
-import { TECH_STACK } from "@/data/tech-stack"
 
 export function StackCloud() {
-  const images = TECH_STACK.map(
+  const deliveryPlatforms = [
+    "ubereats",
+    "doordash",
+    "grubhub",
+    "paypal",
+    "stripe",
+    "discord",
+    "visa",
+    "mastercard",
+    "cashapp",
+  ]
+
+  const images = deliveryPlatforms.map(
     (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`
   )
 

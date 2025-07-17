@@ -12,6 +12,8 @@ const nextConfig: NextConfig = {
       { hostname: "cdn.prod.website-files.com" },
       { hostname: "assets.aceternity.com" },
       { hostname: "images.unsplash.com" },
+      { hostname: "i.imgur.com" },
+      { hostname: "media.discordapp.net" },
     ],
   },
 }

@@ -14,42 +14,43 @@ const exo2 = Exo_2({
 })
 
 export const metadata: Metadata = {
-  title: "Kinh Bach | Frontend Developer Portfolio",
+  title: "Deal Diner | Premium Food Automation",
   description:
-    "Explore Kinh Bach's portfolio – a skilled Frontend Developer specializing in Next.js, React, and modern web technologies. Showcasing innovative projects, UI/UX expertise, and high-performance web applications.",
+    "Deal Diner is your go-to platform for automating Uber Eats group orders through Discord. Fast, simple, and optimized for savings.",
   keywords: [
-    "Frontend Developer",
-    "Next.js Developer",
-    "React Developer",
-    "Kinh Bach Portfolio",
-    "Web Development",
-    "UI/UX Design",
-    "JavaScript",
-    "TypeScript",
-    "Modern Web Technologies",
+    "Deal Diner",
+    "Uber Eats Bot",
+    "Food Automation",
+    "Discord Group Orders",
+    "Uber Eats Group Order",
+    "25 off 25",
+    "Food Deals",
+    "Delivery Bot",
+    "Promo Automation",
+    "Discord Bots",
   ],
   openGraph: {
-    title: "Kinh Bach | Frontend Developer Portfolio",
+    title: "Deal Diner | Automate Group Food Orders",
     description:
-      "Discover Kinh Bach's expertise in Frontend Development, React, and Next.js. View projects, case studies, and technical skills.",
-    url: "https://kinhdev.id.vn",
+      "Streamline your Uber Eats group ordering with Deal Diner. Easily generate links, apply promos, and let our Discord bot handle the rest.",
+    url: "https://dealdiner.store",
     type: "website",
     images: [
       {
-        url: "https://voocgavdbpy2gucg.public.blob.vercel-storage.com/open-graph-6fkPvt3jl60AhDWy2pPhfp3PKoZPrZ.png",
+        url: "https://media.discordapp.net/attachments/1392499993230966828/1392715380530610236/ChatGPT_Image_Jul_9_2025_08_52_18_PM_1.png",
         width: 1200,
         height: 630,
-        alt: "Kinh Bach - Frontend Developer Portfolio",
+        alt: "Deal Diner – Group Order Automation",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kinh Bach | Frontend Developer Portfolio",
+    title: "Deal Diner | Group Order Bot",
     description:
-      "Explore Kinh Bach's frontend projects and expertise in React, Next.js, and modern web development.",
+      "Automate Uber Eats group orders, apply promos like 25 OFF 25, and get your food delivered fast with Deal Diner.",
     images: [
-      "https://voocgavdbpy2gucg.public.blob.vercel-storage.com/open-graph-6fkPvt3jl60AhDWy2pPhfp3PKoZPrZ.png",
+      "https://media.discordapp.net/attachments/1392499993230966828/1392715380530610236/ChatGPT_Image_Jul_9_2025_08_52_18_PM_1.png",
     ],
   },
   icons: {
