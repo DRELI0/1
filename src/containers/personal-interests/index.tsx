@@ -6,6 +6,8 @@ import { Utensils } from "lucide-react"
 import { motion } from "motion/react"
 
 export function PersonalInterests() {
+  const items: any[] = [] // 👈 Define as empty array to prevent build errors
+
   return (
     <BentoGrid className="w-full mx-auto md:auto-rows-[20rem]">
       {items.map((item, i) => (
@@ -46,5 +48,3 @@ const DiscordPreviewCard = () => {
     </motion.div>
   )
 }
-
-const items = []
