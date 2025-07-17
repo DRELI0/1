@@ -3,7 +3,6 @@
 import { cn } from "@/lib/utils"
 import {
   IconArrowUp,
-  IconBrandGithub,
   IconMenu2,
   IconX,
 } from "@tabler/icons-react"
